@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Encrypt{% endblock %}
+
+{% block content %}
+
+<div class="container" style="margin-top: 50px;">
+
+    <form method="POST">
+        <h2 align="center">Encryption</h2>
+
+        <br />
+
+        <div class="form-group">
+            <label for="text">Text</label>
+            <input type="text"
+                   class="form-control"
+                   id="text"
+                   name="text"
+                   placeholder="Enter Text">
+
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Encrypt</button>
+
+    </form>
+
+</div>
+
+{% endblock %}

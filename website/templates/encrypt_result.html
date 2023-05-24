@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Encrypt Result{% endblock %}
+
+{% block content %}
+
+<div class="container" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 text-center">
+        <h1 class="my-4">Encrypt Result</h1>
+        <br />
+
+        <h4 class="my-4">Encrypted Text: {{ encrypted_text }}</h4>
+
+        <h4 class="my-4">Code: {{ code }}</h4>
+
+        <p class="my-4">Warning: You won't be able to decrypt without the code!</p>
+
+
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

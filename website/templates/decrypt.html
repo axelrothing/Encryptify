@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block title %}Decrypt{% endblock %}
+
+{% block content %}
+
+<div class="container" style="margin-top: 50px;">
+
+    <form method="POST">
+        <h2 align="center">Decryption</h2>
+
+        <br />
+
+        <div class="form-group">
+            <label for="text">Encrypted Text</label>
+            <input type="text"
+                   class="form-control"
+                   id="text"
+                   name="text"
+                   placeholder="Enter Encrypted Text">
+
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <label for="password">Code</label>
+            <input type="password"
+                   class="form-control"
+                   id="password"
+                   name="password"
+                   placeholder="Enter Code">
+
+        </div>
+
+        <br />
+        <button type="submit" class="btn btn-primary">Decrypt</button>
+
+    </form>
+
+</div>
+
+
+{% endblock %}
